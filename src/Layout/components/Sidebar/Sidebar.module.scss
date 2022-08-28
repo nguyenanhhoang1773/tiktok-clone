@@ -1,0 +1,13 @@
+.wrapper {
+  width: 350px;
+  padding: 20px 0 26px 8px;
+}
+.unlogged {
+  padding: 20px 8px 24px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  .unlogged-title {
+    font-weight: 600;
+    color: rgba(22, 24, 35, 0.5);
+    margin-bottom: 20px;
+  }
+}

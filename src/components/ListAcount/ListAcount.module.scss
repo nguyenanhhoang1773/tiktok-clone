@@ -1,0 +1,103 @@
+.wrapper {
+  padding: 16px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  .footer-Btn {
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--primary);
+  }
+}
+.title {
+  color: #161823bf;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+p + .acount-item {
+  margin-top: 8px;
+}
+.acount-item {
+  display: flex;
+  padding: 6px 0;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+  }
+}
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.infor {
+  margin-left: 10px;
+  margin-top: -3px;
+}
+.nickname {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: rgb(22, 24, 35);
+}
+.icon {
+  margin-top: -4px;
+  font-size: 1.4rem;
+  margin-left: 4px;
+  color: #20d5ec;
+}
+.name {
+  font-size: 12px;
+  color: rgba(22, 24, 35, 0.75);
+  margin-top: -2px;
+}
+.knowMore {
+  width: 320px;
+  .avatar {
+    width: 44px;
+    height: 44px;
+  }
+}
+.knowMore-wrapper {
+  padding: 20px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  .follow-btn {
+    margin-top: 4px;
+    padding: 8px 28px;
+    border-radius: 4px;
+  }
+}
+
+.knowMore-nickname {
+  margin-top: 18px;
+  font-size: 1.8rem;
+  line-height: 1.1rem;
+  .icon {
+    margin-bottom: 2px;
+  }
+}
+.knowMore-name {
+  font-size: 1.4rem;
+  color: rgb(22, 24, 35);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.total-name {
+  display: inline;
+  margin-left: 4px;
+  font-size: 1.7rem;
+  color: rgba(22, 24, 35, 0.75);
+  & + .total {
+    margin-left: 10px;
+  }
+}
+
+.total {
+  display: inline;
+  font-weight: 700;
+  font-size: 1.7rem;
+}

@@ -1,0 +1,92 @@
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+:root {
+  --primary: #fe2c55;
+  --Default-layout-width: 1150px;
+  --primary-font: 'ProximaNova', sans-serif;
+  --header_height: 60px;
+}
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 8px;
+}
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+html *::-webkit-scrollbar-track {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url('/assets/fonts/Proxima-Nova-Regular.woff2');
+  font-weight: 400;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url('/assets/fonts/ProximaNova-Semibold.woff2');
+  font-weight: 600;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url('/assets/fonts/Proxima-Nova-Bold.woff2');
+  font-weight: 700;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  overflow-y: overlay;
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+input {
+  font-family: var(--primary-font);
+}
+button {
+  font-family: var(--primary-font);
+}
+a {
+  text-decoration: none;
+  color: #000;
+  line-height: 1.375;
+}
+button {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+.tippy-content {
+  background-color: rgba(84, 84, 84, 0.92);
+  border-radius: 6px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 8px 9px;
+}
+.tippy-arrow {
+  color: rgba(84, 84, 84, 0.92);
+}
+.tippy-box {
+  border-radius: 6px;
+}

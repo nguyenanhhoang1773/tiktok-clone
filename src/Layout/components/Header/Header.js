@@ -140,11 +140,7 @@ function Header() {
           >
             <div className={cx('other', { 'avatar-wrapper': isLogin })}>
               {isLogin ? (
-                <Image
-                  fallback={images.noImage}
-                  className={cx('avatar')}
-                  src="https://p77-sign-va-lite.tiktokcdn.com/tos-maliva-avt-0068/1023ec5395c81537230705940d392b3b~c5_100x100.jpeg?x-expires=1661526000&x-signature=uGywc5qb%2Fpp96mdC6zuHFfQbQyY%3D"
-                />
+                <Image fallback={images.noImage} className={cx('avatar')} src={images.avatar1} />
               ) : (
                 <FontAwesomeIcon icon={faEllipsisVertical} />
               )}

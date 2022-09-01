@@ -12,6 +12,10 @@ const publicRoutes = [
     Component: Home,
   },
   {
+    path: config.routes.music,
+    Component: Home,
+  },
+  {
     path: config.routes.following,
     Component: Following,
   },

@@ -1,0 +1,73 @@
+.wrapper {
+  padding: 10px;
+}
+.header {
+  display: flex;
+}
+.avatar {
+  width: 5.6rem;
+  height: 5.6rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.note {
+  margin-left: 10px;
+}
+.infor-link {
+  &:hover {
+    cursor: pointer;
+    .nickname {
+      text-decoration: underline;
+    }
+  }
+}
+.icon {
+  margin-bottom: 2px;
+}
+.nickname {
+  display: inline;
+  font-size: 1.8rem;
+}
+.name {
+  display: inline;
+  margin-left: 6px;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.title {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.music {
+  font-size: 1.6rem;
+  font-weight: 600;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.wrapper-video {
+  position: relative;
+  display: inline-block;
+  border-radius: 8px;
+  line-height: 0;
+  &:hover {
+    cursor: pointer;
+  }
+  .run-btn {
+    display: none;
+    position: absolute;
+    bottom: 42px;
+    left: 22px;
+    color: #fff;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .video {
+    border-radius: 8px;
+  }
+}
+.wrapper-video:hover {
+  .run-btn {
+    display: unset;
+  }
+}

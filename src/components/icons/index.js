@@ -1,3 +1,13 @@
+import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { forwardRef } from 'react';
+
+import classNames from 'classnames/bind';
+import styles from './icons.module.scss';
+const cx = classNames.bind(styles);
+function IconCheck({ className }) {
+  return <FontAwesomeIcon className={cx('icon', className)} icon={faCheckCircle} />;
+}
 export const IconMessage = ({ width = '3.2rem', height = '3.2rem', color = 'rgba(0,0,0,0.9)', className }) => {
   return (
     <svg
@@ -17,6 +27,8 @@ export const IconMessage = ({ width = '3.2rem', height = '3.2rem', color = 'rgba
     </svg>
   );
 };
+
+export default IconCheck;
 export const IconPlane = ({ width = '2.6rem', height = '2.6rem', color = 'rgba(0,0,0,0.9)', className }) => {
   return (
     <svg
@@ -249,3 +261,41 @@ export const IconClose = ({ width = '3.2rem', height = '3.2rem', className, onCl
     </svg>
   );
 };
+
+export const IconPlayVideo = forwardRef(({ width = '3.2rem', height = '3.2rem', className, onClick }, ref) => {
+  return (
+    <svg
+      ref={ref}
+      onClick={onClick}
+      className={className}
+      viewBox="0 0 48 48"
+      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
+      fill="currentColor"
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M12 8.77702C12 6.43812 14.5577 4.99881 16.5569 6.21266L41.6301 21.4356C43.5542 22.6038 43.5542 25.3962 41.6301 26.5644L16.5569 41.7873C14.5577 43.0012 12 41.5619 12 39.223V8.77702Z"
+      ></path>
+    </svg>
+  );
+});
+export const IconPauseVideo = forwardRef(({ width = '3.2rem', height = '3.2rem', className, onClick, ref }) => {
+  return (
+    <svg
+      ref={ref}
+      className={className}
+      onClick={onClick}
+      width="20"
+      height="20"
+      viewBox="0 0 48 48"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M8 6C8 5.44771 8.44772 5 9 5H17C17.5523 5 18 5.44772 18 6V42C18 42.5523 17.5523 43 17 43H9C8.44772 43 8 42.5523 8 42V6Z"></path>
+      <path d="M30 6C30 5.44771 30.4477 5 31 5H39C39.5523 5 40 5.44772 40 6V42C40 42.5523 39.5523 43 39 43H31C30.4477 43 30 42.5523 30 42V6Z"></path>
+    </svg>
+  );
+});

@@ -5,5 +5,6 @@ export const routes = {
   upload: '/upload',
   search: '/search',
   live: '/live',
+  music: '/music',
 };
 export default routes;

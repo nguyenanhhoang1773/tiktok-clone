@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #f1f1f2;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.09);
+  }
+}
+.total {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #161823bf;
+  font-weight: 700;
+  margin-top: 6px;
+  & + .wrapper {
+    margin-top: 6px;
+  }
+}

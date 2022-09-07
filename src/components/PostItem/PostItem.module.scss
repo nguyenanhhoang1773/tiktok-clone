@@ -77,11 +77,70 @@
   .run-btn {
     display: none;
     position: absolute;
-    bottom: 42px;
+    bottom: 38px;
     left: 22px;
     color: #fff;
     z-index: 10;
     cursor: pointer;
+  }
+  .volume-wrapper {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 38px;
+    right: 22px;
+    .background-volume {
+      position: absolute;
+      height: 68px;
+      width: 24px;
+      top: -9px;
+      right: 0;
+      left: -11px;
+      bottom: 0;
+      border-radius: 20px;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    .volume-control {
+      display: none;
+      position: relative;
+      user-select: none;
+    }
+    .show {
+      display: unset;
+    }
+    .volume-level {
+      z-index: 3;
+      border: 1px solid transparent;
+      position: absolute;
+      background-color: #a2a2a6;
+      height: 4px;
+      width: 2px;
+    }
+    .volumeIcon {
+      margin-top: 10px;
+      // background-color: black;
+    }
+    .volume-bar {
+      position: relative;
+      user-select: none;
+      height: 50px;
+      width: 2px;
+      border: 1px solid transparent;
+      background-color: #fff;
+    }
+    .volume-remote {
+      z-index: 2;
+      user-select: none;
+      position: absolute;
+      top: 0;
+      left: -5px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      z-index: 99;
+      background-color: #fff;
+    }
   }
   .video {
     border-radius: 8px;
@@ -90,6 +149,9 @@
 .wrapper-video:hover {
   .run-btn {
     display: unset;
+  }
+  .volume-wrapper {
+    display: flex;
   }
 }
 .interactive {

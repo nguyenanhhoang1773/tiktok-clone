@@ -1,39 +1,17 @@
 import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import styles from './PostItem.module.scss';
-import { useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 
 import config from '~/config';
+import Video from '~/components/Video';
 import Image from '~/components/Image';
-import IconCheck, {
-  IconPlayVideo,
-  IconPauseVideo,
-  IconHeart,
-  IconMessageVideo,
-  IconShare,
-  IconMusic,
-} from '~/components/icons';
+import IconCheck, { IconHeart, IconMessageVideo, IconShare, IconMusic } from '~/components/icons';
 import WrapperIconBtn from './components';
 import Button from '../Button';
 
 const cx = classNames.bind(styles);
 function PostItem({ imgSrc, nickname, name, music, musicName, title, videoSrc, totalLove, totalComment, totalShare }) {
-  const videoRef = useRef();
-  const [isPlaying, setIsPlaying] = useState(false);
-  const RunBtn = isPlaying ? IconPauseVideo : IconPlayVideo;
-  const handleRunVideo = (e) => {
-    const videoElement = videoRef.current;
-    if (e.target.closest('svg')) {
-      e.stopPropagation();
-    }
-    if (isPlaying) {
-      videoElement.pause();
-    } else {
-      videoElement.play();
-    }
-    setIsPlaying((prev) => !prev);
-  };
   return (
     <div className={cx('wrapper')}>
       <header className={cx('header')}>
@@ -53,12 +31,7 @@ function PostItem({ imgSrc, nickname, name, music, musicName, title, videoSrc, t
             {musicName}
           </Link>
           <div className={cx('container')}>
-            <div onClick={(e) => handleRunVideo(e)} className={cx('wrapper-video')}>
-              <video loop ref={videoRef} width="280px" height="500px" className={cx('video')}>
-                <source src={videoSrc}></source>
-              </video>
-              <RunBtn onClick={(e) => handleRunVideo(e)} className={cx('run-btn')} />
-            </div>
+            <Video videoSrc={videoSrc} />
             <div className={cx('interactive')}>
               <WrapperIconBtn total={totalLove}>
                 <IconHeart />

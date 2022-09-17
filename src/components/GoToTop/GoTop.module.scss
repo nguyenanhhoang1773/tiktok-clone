@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  position: fixed;
+  bottom: 12px;
+  right: 26px;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--primary);
+  border-radius: 50%;
+  &:hover {
+    background-color: #ef2950;
+    cursor: pointer;
+  }
+  .icon {
+    color: #fff;
+  }
+}

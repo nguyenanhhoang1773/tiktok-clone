@@ -1,6 +1,15 @@
 .wrapper {
-  width: 350px;
+  position: fixed;
+  width: var(--sidebar_width);
   padding: 20px 0 26px 8px;
+  overflow-y: auto;
+  height: 90vh;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.sideBar {
+  position: fixed;
 }
 .unlogged {
   padding: 20px 8px 24px 0;

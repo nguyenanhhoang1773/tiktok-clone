@@ -1,0 +1,14 @@
+.wrapper {
+  display: none;
+  top: 0;
+  left: var(--sidebar_width);
+  position: absolute;
+  height: 200px;
+  width: 6px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  transition: top linear;
+  &.show {
+    display: block;
+  }
+}
